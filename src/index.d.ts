@@ -1,3 +1,5 @@
+import "vite/client";
+
 declare module "*.jpeg" {
   const value: any;
   export = value;
