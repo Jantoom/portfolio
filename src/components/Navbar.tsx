@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { navLinks } from "../data";
+import { avatar, menu, close } from "../assets";
 
 const Navbar: React.FC = () => {
   const [active, setActive] = useState("");
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={avatar} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Jaleel &nbsp;
             <span className="sm:block hidden">Abdur-Raheem</span>

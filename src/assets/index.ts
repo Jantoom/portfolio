@@ -1,62 +1,77 @@
-import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
-
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// UI
+import avatar from "./ui/avatar.png";
+import logo from "./ui/logo.svg";
+import menu from "./ui/menu.svg";
+import close from "./ui/close.svg";
+import github from "./ui/github.png";
+// Overview
+import fullstack from "./overview/fullstack.png";
+import cloud from "./overview/cloud.png";
+import game from "./overview/game.png";
+import content from "./overview/content.png";
+// Experience
+import dnui from "./experiences/dnui.png";
+import uq from "./experiences/uq.png";
+import aubot from "./experiences/aubot.png";
+// Technologies
+import typescript from "./technologies/typescript.svg";
+import reactjs from "./technologies/reactjs.svg";
+import nodejs from "./technologies/nodejs.svg";
+import git from "./technologies/git.svg";
+import python from "./technologies/python.svg";
+import tensorflow from "./technologies/tensorflow.svg";
+import flask from "./technologies/flask.svg";
+import docker from "./technologies/docker.svg";
+import terraform from "./technologies/terraform.svg";
+import aws from "./technologies/aws.svg";
+import csharp from "./technologies/csharp.svg";
+import unity from "./technologies/unity.svg";
+import unreal from "./technologies/unreal.svg";
+// Projects
+import songtrax from "./projects/songtrax.png";
+import patternflow from "./projects/patternflow.png";
+import dijo from "./projects/dijo.png";
+import popo from "./projects/popo.png";
+import jumpsitters from "./projects/jumpsitters.png";
+import retroactive from "./projects/retroactive.png";
+import urbantry from "./projects/urbantry.png";
 
 export {
+  // UI
+  avatar,
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
+  github,
+  // Overview
+  fullstack,
+  cloud,
+  game,
+  content,
+  // Experience
+  dnui,
+  uq,
+  aubot,
+  // Technologies
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  reactjs,
+  nodejs,
+  git,
+  python,
+  tensorflow,
+  flask,
+  docker,
+  terraform,
+  aws,
+  csharp,
+  unity,
+  unreal,
+  // Projects
+  songtrax,
+  patternflow,
+  dijo,
+  popo,
+  jumpsitters,
+  retroactive,
+  urbantry,
 };

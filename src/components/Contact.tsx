@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { contact } from "../data";
 import { emailjs as secret } from "../../secret.json";
 
 const Contact: React.FC = () => {
@@ -63,8 +64,8 @@ const Contact: React.FC = () => {
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
-          <p className={styles.sectionSubText}>Get in touch</p>
-          <p className={styles.sectionHeadText}>Contact.</p>
+          <p className={styles.sectionSubText}>{contact.subheadingText}</p>
+          <p className={styles.sectionHeadText}>{contact.headingText}</p>
 
           <form
             ref={formRef}

@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { experiences } from "../data";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 interface ExperienceCardProps {
   experience: any;
@@ -28,7 +28,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[85%] h-[85%] object-contain"
           />
         </div>
       }
@@ -61,13 +61,22 @@ const Experience: React.FC = () => {
   return (
     <SectionWrapper sectionId={"work"}>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Experience.</h2>
+        <p className={styles.sectionSubText}>{experiences.subheadingText}</p>
+        <h2 className={styles.sectionHeadText}>{experiences.headingText}</h2>
       </motion.div>
+
+      <div className="w-full flex">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          {experiences.description}
+        </motion.p>
+      </div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          {experiences.content.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>
