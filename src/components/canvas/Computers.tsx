@@ -8,7 +8,7 @@ interface ComputersProps {
   isMobile: boolean;
 }
 const Computers: React.FC<ComputersProps> = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./portfolio/desktop_pc/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />

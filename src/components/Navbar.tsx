@@ -5,8 +5,12 @@ import { styles } from "../styles";
 import { navLinks } from "../data";
 import { avatar, menu, close } from "../assets";
 
-const Navbar: React.FC = () => {
-  const [active, setActive] = useState("");
+interface NavbarProps {
+  active: string;
+  setActive: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ active, setActive }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -15,7 +19,7 @@ const Navbar: React.FC = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to="/"
+          to="portfolio"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
