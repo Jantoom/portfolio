@@ -24,8 +24,8 @@ const App: React.FC = () => {
           <Hero setActive={setActive}/>
         </div>
         <Overview />
-        <Experience />
         <Technologies />
+        <Experience />
         <Projects />
         <Testimonials />
         <div className="relative z-0">

@@ -30,10 +30,6 @@ export const technologies: Data = {
       icon: nodejs,
     },
     {
-      name: "Git",
-      icon: git,
-    },
-    {
       name: "Python",
       icon: python,
     },

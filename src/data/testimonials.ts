@@ -10,7 +10,7 @@ export const testimonials: Data = {
       name: "Chris Adams",
       designation: "Senior Demonstrator",
       company: "UQ",
-      image: "https://media.licdn.com/dms/image/C5603AQGg898ynnV1NQ/profile-displayphoto-shrink_200_200/0/1593682407800?e=1707350400&v=beta&t=RXCtJElwJX5XbgM81jEytFKe_Jpbo6nWc1EOa97DGxM",
+      image: "https://media.licdn.com/dms/image/C5603AQGg898ynnV1NQ/profile-displayphoto-shrink_400_400/0/1593682407800?e=1714003200&v=beta&t=_g7zqxTp0dnOOAH88YoUevofSO6N-EMcQRd8x6-vL74",
     },
     {
       testimonial:

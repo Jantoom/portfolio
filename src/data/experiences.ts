@@ -8,16 +8,16 @@ export const experiences: Data = {
     "My professional career has tested my leadership and management skills working with diverse teams of various sizes. I am looking forward to more development roles to solidify my software expertise.",
   content: [
     {
-      title: "Study Abroad",
+      title: "Grant Recipient",
       company_name:
-        "Dalian Neusoft University of Information | University of Queensland",
+        "Dalian Neusoft University of Information",
       icon: dnui,
       iconBg: "#ffffff",
       date: "June 2023 - July 2023",
       points: [
-        "Collaborated with 6 Australian & Chinese students on a business venture from scratch.",
-        "Coordinated the team’s model deployment and mobile app distribution with AWS. Linked products together via custom REST API.",
-        "Developed a business model and pitched our project to staff, students, and industry partners, winning Best Business Value Award.",
+        "Innovated with Australian & Chinese students of various technical backgrounds on a business venture.",
+        "Collaboratively created a proof-of-concept, worked on integrating object recognition models via AWS.",
+        "Publicly demonstrated project to investors, teachers & students, awarded \"Best Business Value\".",
       ],
     },
     {
@@ -27,8 +27,9 @@ export const experiences: Data = {
       iconBg: "#49075e",
       date: "February 2023 - November 2023",
       points: [
-        "Personally managed and supported 90 students across 3 project-based third-year level courses.",
-        "Evolved my communication skills and own teaching style with demonstrably positive results and feedback.",
+        "Supervised 90+ students in small to medium-sized projects over 3 studio-based courses.",
+        "Stimulated discussions with students, developing their problem-solving skills and documentation.",
+        "Strategized with cotutors to make effective, self-motivated adjustments to teaching & team collaboration.",
       ],
     },
     {
@@ -38,9 +39,9 @@ export const experiences: Data = {
       iconBg: "#ffffff",
       date: "March 2023 – September 2023",
       points: [
-        "Reviewed 100s of Python exercises designed carefully for children aged 10 to 14.",
-        "Highlighted errors in quality, relevance, and consistency in all stages of production.",
-        "Proposed to the CEO new internal methods and standards to optimise the efficiency of a small, global team.",
+        "Reviewed 100s of Python exercises designed to teach children intermediate concepts seen in university.",
+        "Corrected errors in quality, relevance, and consistency, saved time on codebase implementation.",
+        "Optimized internal methods and standards for a global development team, reported directly to the CEO.",
       ],
     },
   ],
