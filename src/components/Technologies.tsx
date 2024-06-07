@@ -9,7 +9,7 @@ interface OverviewProps {
 }
 
 const Technologies: React.FC<OverviewProps> = ({ serviceId }) => {
-  return (
+  return serviceId != -1 ? (
     <SectionWrapper sectionId={""}>
       <div className="flex flex-row flex-wrap justify-center gap-10">
         {technologies.content.map((technology) => (
@@ -20,7 +20,7 @@ const Technologies: React.FC<OverviewProps> = ({ serviceId }) => {
         ))}
       </div>
     </SectionWrapper>
-  );
+  ) : null;
 };
 
 export default Technologies;
