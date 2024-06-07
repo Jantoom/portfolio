@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ setActive }) => {
       <ComputersCanvas />
 
       <div
-        className="absolute sm:bottom-32 bottom-80 w-full flex justify-center items-center"
+        className="absolute xs:bottom-32 bottom-80 w-full flex justify-center items-center"
         onClick={() => setActive("About")}
       >
         <a href="#about">
