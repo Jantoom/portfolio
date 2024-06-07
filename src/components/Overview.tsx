@@ -9,11 +9,13 @@ import { SectionWrapper } from "../hoc";
 
 interface OverviewCardProps {
   index: number;
+  setServiceId: React.Dispatch<React.SetStateAction<number>>;
   title: string;
   icon: any;
+  serviceId: number;
 }
 
-const OverviewCard: React.FC<OverviewCardProps> = ({ index, title, icon }) => {
+const OverviewCard: React.FC<OverviewCardProps> = ({ index, setServiceId, title, icon, serviceId }) => {
   return (
     <Tilt
       options={{ max: 45, scale: 1, speed: 450 }}
@@ -22,6 +24,7 @@ const OverviewCard: React.FC<OverviewCardProps> = ({ index, title, icon }) => {
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        onClick={() => setServiceId(serviceId)}
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
           <img src={icon} alt={title} className="w-32 h-32 object-contain" />
@@ -34,7 +37,11 @@ const OverviewCard: React.FC<OverviewCardProps> = ({ index, title, icon }) => {
   );
 };
 
-const Overview: React.FC = () => {
+interface OverviewProps {
+  setServiceId: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const Overview: React.FC<OverviewProps> = ({ setServiceId }) => {
   return (
     <SectionWrapper sectionId="about">
       <motion.div variants={textVariant()}>
@@ -49,13 +56,13 @@ const Overview: React.FC = () => {
         {overview.description} <br />
         <br />{" "}
         <span className="font-semibold">
-          Let's work together and bring your ideas to life!
+          Click on the tiles to see what technologies I use!
         </span>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {overview.content.map((service, index) => (
-          <OverviewCard key={service.title} index={index} {...service} />
+          <OverviewCard key={service.title} index={index} setServiceId={setServiceId} {...service} />
         ))}
       </div>
     </SectionWrapper>

@@ -14,6 +14,7 @@ import {
 
 const App: React.FC = () => {
   const [active, setActive] = useState("");
+  const [serviceId, setServiceId] = useState(-1);
     
   return (
     <BrowserRouter>
@@ -23,8 +24,8 @@ const App: React.FC = () => {
           <Navbar active={active} setActive={setActive}/>
           <Hero setActive={setActive}/>
         </div>
-        <Overview />
-        <Technologies />
+        <Overview setServiceId={setServiceId} />
+        <Technologies serviceId={serviceId} />
         <Experience />
         <Projects />
         <Testimonials />

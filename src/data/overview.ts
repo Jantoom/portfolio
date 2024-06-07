@@ -11,20 +11,24 @@ export const overview: Data = {
     design creative, big-picture solutions for real-world problems.",
   content: [
     {
-      title: "Game Developer",
-      icon: game,
-    },
-    {
-      title: "Content Creator",
-      icon: content,
-    },
-    {
-      title: "Full Stack Developer",
+      title: "Full Stack Development",
       icon: fullstack,
+      serviceId: 0,
     },
     {
-      title: "Cloud Architect",
+      title: "Cloud Engineering",
       icon: cloud,
+      serviceId: 1,
+    },
+    {
+      title: "Artificial Intelligence",
+      icon: content,
+      serviceId: 2,
+    },
+    {
+      title: "Game Development",
+      icon: game,
+      serviceId: 3,
     },
   ],
 };
