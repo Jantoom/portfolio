@@ -50,17 +50,17 @@ export const technologies: Data = {
     {
       name: "Docker",
       icon: docker,
-      serviceIds: [0, 1]
+      serviceIds: [1]
     },
     {
       name: "Terraform",
       icon: terraform,
-      serviceIds: [0, 1]
+      serviceIds: [1]
     },
     {
       name: "AWS",
       icon: aws,
-      serviceIds: [0, 1]
+      serviceIds: [1]
     },
     {
       name: "C#",
