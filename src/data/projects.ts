@@ -33,7 +33,7 @@ export const projects: Data = {
           color: "green-text-gradient",
         },
         {
-          name: "vite",
+          name: "framer-motion",
           color: "pink-text-gradient",
         },
         {
@@ -43,6 +43,10 @@ export const projects: Data = {
         {
           name: "zustand",
           color: "green-text-gradient",
+        },
+        {
+          name: "eslint",
+          color: "pink-text-gradient",
         },
       ],
       image: games,
