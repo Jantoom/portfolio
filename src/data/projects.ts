@@ -1,4 +1,5 @@
 import {
+  games,
   songtrax,
   patternflow,
   dijo,
@@ -17,6 +18,36 @@ export const projects: Data = {
     Each one is given a short description of what it is, with some key technologies mentioned. \
     You can click on the GitHub icons to see the repositories.",
   content: [
+    {
+      name: "Games Suite",
+      description:
+        "A collection of games that I have created, including Minesweeper, Sudoku, and a few others. \
+        Each game has its own unique features and gameplay mechanics, and they are all built using React and TypeScript.",
+      tags: [
+        {
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "react",
+          color: "green-text-gradient",
+        },
+        {
+          name: "vite",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "zustand",
+          color: "green-text-gradient",
+        },
+      ],
+      image: games,
+      source_code_link: "https://github.com/Jantoom/games",
+    },
     {
       name: "Urbantry",
       description:

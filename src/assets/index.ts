@@ -28,6 +28,7 @@ import csharp from "./technologies/csharp.svg";
 import unity from "./technologies/unity.svg";
 import unreal from "./technologies/unreal.svg";
 // Projects
+import games from "./projects/games.png";
 import songtrax from "./projects/songtrax.png";
 import patternflow from "./projects/patternflow.png";
 import dijo from "./projects/dijo.png";
@@ -67,6 +68,7 @@ export {
   unity,
   unreal,
   // Projects
+  games,
   songtrax,
   patternflow,
   dijo,
